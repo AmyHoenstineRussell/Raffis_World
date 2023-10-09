@@ -18,7 +18,7 @@
     width: 90px;
 }
 
-/*navigation styling*/
+/*navigation bar styling*/
 nav {
     display: flex;
     flex: 1 1 auto;
@@ -53,6 +53,7 @@ button {
 a {
     background-color: black;
     color: whitesmoke;
+    text-decoration: none;
 }
 
 /* welcome message styling */
@@ -99,7 +100,8 @@ h1 {
 }
 
 .welcome_photo img {
-    border: solid black 3px;
+    border: solid black 2.5px;
+    border-radius: 2%;
 }
 
 /* SPECIFIC TO STATS PAGE */
@@ -109,7 +111,7 @@ h2 {
     display: flex;
     flex: 1 1 auto;
     font-family:'Courier New', Courier, monospace;
-    font-size: 30px;
+    font-size: 40px;
     font-weight: 600;
     justify-content: center;
     align-items: center;
@@ -125,16 +127,21 @@ h4 {
     justify-content: center;
     gap: 10px;
     margin: 0px;
-    padding: 10px 0px;
-    border: 0px;
+    padding: 20px 0px;
+}
+
+.stats h4 {
+    font-size: 22px;
+    font-weight: 400;
+    justify-content: flex-start;
 }
 
 .stats_sci,
 .stats_numbers,
 .stats_naps {
-    width: 420px;
+    width: 440px;
+    padding: 7px 0px 24px 0px;
 }
-
 
 .stats_sci ul,
 .stats_numbers ul,
@@ -144,8 +151,7 @@ h4 {
     justify-content: center;
     align-items: top;
     margin: 0px;
-    padding: 0px 0px 0px 25px;
-    border: 0 px;
+    list-style: none;
 }
 
 .big {
@@ -161,8 +167,281 @@ h4 {
     width: 350px;
     height: auto;
     margin: 10px 0px;
-    border: black solid 3px;
+    border: black solid 2.5px;
+    border-radius: 2%;
 }
 
+.stats_sci,
+.stats_sci ul,
+.stats_sci h4,
+.stats_sci li,
+.stats_sci span  {
+    background-color: rgb(180, 200, 175);
+}
 
+.stats_numbers,
+.stats_numbers ul,
+.stats_numbers h4,
+.stats_numbers li,
+.stats_numbers span {
+    background-color: rgb(180, 190, 175);
+}
 
+.stats_naps,
+.stats_naps ul,
+.stats_naps h4,
+.stats_naps li,
+.stats_naps span {
+    background-color: rgb(180, 180, 176);
+}
+
+/*SPECIFIC TO PALS PAGE*/
+
+.pals_intro, 
+h2 {
+    display: flex;
+    flex: 1 1 auto;
+    font-family:'Courier New', Courier, monospace;
+    font-size: 30px;
+    font-weight: 600;
+    justify-content: center;
+    align-items: center;
+    margin: 0px;
+    padding: 10px 0px;
+    border: 0px;
+}
+
+.pals_container {
+    max-width: 1500px; 
+    padding: 10px;
+    margin: 0px auto;
+}
+
+.renoir,
+.luna,
+.marty,
+.bailey,
+.joey {
+    padding: 7px;
+}
+
+.renoir_name,
+.marty_name,
+.joey_name {
+    font-family:'Courier New', Courier, monospace;
+    font-size: 30px;
+    font-weight: 400;
+    padding: 10px 20px 0px 20px;
+}
+
+.luna_name,
+.bailey_name {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 30px;
+    font-weight:400;
+    padding: 10px 20px 0px 20px;
+    text-align: right;
+}
+
+.renoir_content,
+.luna_content,
+.marty_content,
+.bailey_content,
+.joey_content {
+    display: flex;
+    flex: 1 1 0;
+    gap: 20px;
+    font-family:'Courier New', Courier, monospace;
+    padding: 0px 20px 20px 20px;  
+}
+
+.renoir_content img,
+.luna_content img,
+.marty_content img,
+.bailey_content img,
+.joey_content img {
+    display: flex;
+    flex: 1 1 0;
+    width: 275px;
+    height: auto;
+    border: solid black 2.5px;
+    border-radius: 2%;
+}
+
+.renoir_name,
+.renoir_content,
+.renoir_content p {
+    background-color: rgb(180, 200, 175);
+}
+
+.luna_name,
+.luna_content,
+.luna_content p {
+    background-color: rgb(180, 190, 175);
+}
+
+.marty_name,
+.marty_content,
+.marty_content p {
+    background-color: rgb(180, 180, 175);
+}
+
+.bailey_name,
+.bailey_content,
+.bailey_content p {
+    background-color: rgb(180, 170, 175);
+}
+
+.joey_name,
+.joey_content,
+.joey_content p {
+    background-color: rgb(180, 160, 175);
+}
+
+.likes_intro, 
+h2 {
+    display: flex;
+    flex: 1 1 auto;
+    font-family:'Courier New', Courier, monospace;
+    font-size: 30px;
+    font-weight: 600;
+    justify-content: center;
+    align-items: center;
+    margin: 0px;
+    padding: 10px 0px;
+    border: 0px;
+}
+
+.likes_intro2 {
+    display: flex;
+    flex: 1 1 0;
+    font-family:'Courier New', Courier, monospace;
+    font-size: 16px;
+    font-weight: 400;
+    justify-content: center;
+    align-items: center;
+    margin: 0px;
+    padding: 0px 0px 16px 0px;
+    border: 0px;
+}
+
+.likes_container {
+    display: flex;
+    margin: 0px 100px 0px 100px;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 16px;
+}
+
+.peanut_butter,
+.tennis_ball,
+.frick_park,
+.millies,
+.pajamas,
+.sleep,
+.yoga,
+.popcorn,
+.moose {
+    /*position: relative;*/
+    width: 300px;
+    height: 300px;
+}
+
+.peanut_butter_img,
+.tennis_ball_img,
+.frick_park_img,
+.millies_img,
+.pajamas_img,
+.sleep_img,
+.yoga_img,
+.popcorn_img,
+.moose_img {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    border: solid black 2.75px;
+    border-radius: 2%;
+    gap: 16px;
+    }
+
+.peanut_butter_overlay,
+.tennis_ball_overlay,
+.frick_park_overlay,
+.millies_overlay,
+.pajamas_overlay,
+.sleep_overlay,
+.yoga_overlay,
+.popcorn_overlay,
+.moose_overlay {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 102%;
+    height: 102%;
+    opacity: 0;
+}
+
+.peanut_butter_overlay {
+    background-color: rgb(180, 220, 175)
+}
+
+.tennis_ball_overlay {
+    background-color: rgb(180, 210, 175)
+}
+
+.frick_park_overlay {
+    background-color: rgb(180, 200, 175)
+}
+
+.millies_overlay {
+    background-color: rgb(180, 190, 175)
+}
+
+.pajamas_overlay{
+    background-color: rgb(180, 180, 175);
+}
+
+.sleep_overlay {
+    background-color: rgb(180, 170, 175);
+}
+
+.yoga_overlay {
+    background-color: rgb(180, 160, 175);
+}
+
+.popcorn_overlay {
+    background-color: rgb(180, 150, 175);
+}
+
+.moose_overlay {
+    background-color: rgb(180, 140, 175);
+}
+.peanut_butter_title,
+.tennis_ball_title,
+.frick_park_title,
+.millies_title,
+.pajamas_title,
+.sleep_title,
+.yoga_title,
+.popcorn_title,
+.moose_title {
+    font-family:'Courier New', Courier, monospace;
+    font-size: 30px;
+    font-weight: 500;
+}
+
+.peanut_butter_overlay:hover,
+.tennis_ball_overlay:hover,
+.frick_park_overlay:hover,
+.millies_overlay:hover,
+.pajamas_overlay:hover,
+.sleep_overlay:hover,
+.yoga_overlay:hover,
+.popcorn_overlay:hover,
+.moose_overlay:hover {
+    opacity: 0.8;
+}
