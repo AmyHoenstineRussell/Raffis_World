@@ -3,6 +3,7 @@
     /*border: solid red 2px;*/
 }
 
+/* website header for all pages - logo & nav bar*/
 .header {
     display:flex;
     flex: 1 1 auto;
@@ -56,7 +57,8 @@ a {
     text-decoration: none;
 }
 
-/* welcome message styling */
+/*SPECIFIC TO HOME PAGE*/
+/* home page welcome message styling */
 .welcome {
     display: flex;
     flex: 1 1 auto;
@@ -105,7 +107,7 @@ h1 {
 }
 
 /* SPECIFIC TO STATS PAGE */
-
+/* stats page header */
 .stats_intro, 
 h2 {
     display: flex;
@@ -120,6 +122,7 @@ h2 {
     border: 0px;
 }
 
+/* stats page content styling */
 .stats,
 h4 {
     display: flex;
@@ -154,10 +157,12 @@ h4 {
     list-style: none;
 }
 
+/* span styling for scientific classification */
 .big {
     font-weight: 700;
 }
 
+/* image styling for stats page */
 .stats_sci img,
 .stats_numbers img,
 .stats_naps img {
@@ -171,6 +176,7 @@ h4 {
     border-radius: 2%;
 }
 
+/* adding background colors */
 .stats_sci,
 .stats_sci ul,
 .stats_sci h4,
@@ -195,109 +201,8 @@ h4 {
     background-color: rgb(180, 180, 176);
 }
 
-/*SPECIFIC TO PALS PAGE*/
-
-.pals_intro, 
-h2 {
-    display: flex;
-    flex: 1 1 auto;
-    font-family:'Courier New', Courier, monospace;
-    font-size: 30px;
-    font-weight: 600;
-    justify-content: center;
-    align-items: center;
-    margin: 0px;
-    padding: 10px 0px;
-    border: 0px;
-}
-
-.pals_container {
-    max-width: 1500px; 
-    padding: 10px;
-    margin: 0px auto;
-}
-
-.renoir,
-.luna,
-.marty,
-.bailey,
-.joey {
-    padding: 7px;
-}
-
-.renoir_name,
-.marty_name,
-.joey_name {
-    font-family:'Courier New', Courier, monospace;
-    font-size: 30px;
-    font-weight: 400;
-    padding: 10px 20px 0px 20px;
-}
-
-.luna_name,
-.bailey_name {
-    font-family: 'Courier New', Courier, monospace;
-    font-size: 30px;
-    font-weight:400;
-    padding: 10px 20px 0px 20px;
-    text-align: right;
-}
-
-.renoir_content,
-.luna_content,
-.marty_content,
-.bailey_content,
-.joey_content {
-    display: flex;
-    flex: 1 1 0;
-    gap: 20px;
-    font-family:'Courier New', Courier, monospace;
-    padding: 0px 20px 20px 20px;  
-}
-
-.renoir_content img,
-.luna_content img,
-.marty_content img,
-.bailey_content img,
-.joey_content img {
-    display: flex;
-    flex: 1 1 0;
-    width: 275px;
-    height: auto;
-    border: solid black 2.5px;
-    border-radius: 2%;
-}
-
-.renoir_name,
-.renoir_content,
-.renoir_content p {
-    background-color: rgb(180, 200, 175);
-}
-
-.luna_name,
-.luna_content,
-.luna_content p {
-    background-color: rgb(180, 190, 175);
-}
-
-.marty_name,
-.marty_content,
-.marty_content p {
-    background-color: rgb(180, 180, 175);
-}
-
-.bailey_name,
-.bailey_content,
-.bailey_content p {
-    background-color: rgb(180, 170, 175);
-}
-
-.joey_name,
-.joey_content,
-.joey_content p {
-    background-color: rgb(180, 160, 175);
-}
-
+/* SPECIFIC TO LIKES PAGE */
+/* likes page header*/
 .likes_intro, 
 h2 {
     display: flex;
@@ -325,12 +230,13 @@ h2 {
     border: 0px;
 }
 
+/* likes page content styling and positioning */
 .likes_container {
     display: flex;
-    margin: 0px 100px 0px 100px;
+    margin: 0px 200px 0px 200px;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 16px;
+    gap: 24px;
 }
 
 .peanut_butter,
@@ -342,11 +248,11 @@ h2 {
 .yoga,
 .popcorn,
 .moose {
-    /*position: relative;*/
-    width: 300px;
-    height: 300px;
+    position: relative;
+    width: 250px;
+    height: 250px;
 }
-
+/* likes page image styling*/
 .peanut_butter_img,
 .tennis_ball_img,
 .frick_park_img,
@@ -363,7 +269,7 @@ h2 {
     border-radius: 2%;
     gap: 16px;
     }
-
+/* likes page image overlay/hover styling*/
 .peanut_butter_overlay,
 .tennis_ball_overlay,
 .frick_park_overlay,
@@ -444,4 +350,109 @@ h2 {
 .popcorn_overlay:hover,
 .moose_overlay:hover {
     opacity: 0.8;
+}
+
+/*SPECIFIC TO PALS PAGE*/
+/* pals page header */
+.pals_intro, 
+h2 {
+    display: flex;
+    flex: 1 1 auto;
+    font-family:'Courier New', Courier, monospace;
+    font-size: 30px;
+    font-weight: 600;
+    justify-content: center;
+    align-items: center;
+    margin: 0px;
+    padding: 10px 0px;
+    border: 0px;
+}
+
+/* pals page content styling */
+.pals_container {
+    max-width: 1500px; 
+    padding: 10px;
+    margin: 0px auto;
+}
+
+.renoir,
+.luna,
+.marty,
+.bailey,
+.joey {
+    padding: 7px;
+}
+
+.renoir_name,
+.marty_name,
+.joey_name {
+    font-family:'Courier New', Courier, monospace;
+    font-size: 30px;
+    font-weight: 400;
+    padding: 10px 20px 0px 20px;
+}
+
+.luna_name,
+.bailey_name {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 30px;
+    font-weight:400;
+    padding: 10px 20px 0px 20px;
+    text-align: right;
+}
+
+.renoir_content,
+.luna_content,
+.marty_content,
+.bailey_content,
+.joey_content {
+    display: flex;
+    flex: 1 1 0;
+    gap: 20px;
+    font-family:'Courier New', Courier, monospace;
+    padding: 0px 20px 20px 20px;  
+}
+
+.renoir_content img,
+.luna_content img,
+.marty_content img,
+.bailey_content img,
+.joey_content img {
+    display: flex;
+    flex: 1 1 0;
+    width: 275px;
+    height: auto;
+    border: solid black 2.5px;
+    border-radius: 2%;
+}
+
+/* pals name styling */
+.renoir_name,
+.renoir_content,
+.renoir_content p {
+    background-color: rgb(180, 200, 175);
+}
+
+.luna_name,
+.luna_content,
+.luna_content p {
+    background-color: rgb(180, 190, 175);
+}
+
+.marty_name,
+.marty_content,
+.marty_content p {
+    background-color: rgb(180, 180, 175);
+}
+
+.bailey_name,
+.bailey_content,
+.bailey_content p {
+    background-color: rgb(180, 170, 175);
+}
+
+.joey_name,
+.joey_content,
+.joey_content p {
+    background-color: rgb(180, 160, 175);
 }
